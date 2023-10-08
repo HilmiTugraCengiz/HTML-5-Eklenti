@@ -1,0 +1,73 @@
+HTTP durum kodları (status codes), istemci yani web tarayıcı ile sunucu arasındaki iletişim sürecinde neler olduğunu açıklayan, 3 haneli bir sayıdır.
+Bu kodların genellikle hata ile ilgili olduğu düşünülür.
+Fakat kodlar sunucu ve istemci arasındaki aktarım işleminin durumunu bildirir.
+Sadece hatalı olan işlemlerin değil, başarılı işlemlerin de HTTP durum kodu vardır.
+
+
+
+1xx: Kullanıcı yani tarayıcının gönderdiği isteğin sunucuya ulaştığını ve istek ile ilgili işlemin başlamış olduğunu bildiren HTTP durum kodları sınıfıdır.
+Bu sınıftaki kodlar şunlardır:
+100 - Devam
+101 - Protokol değiştirme
+102 - İşlem
+
+2xx: İstemciden gelen talebin sunucuya ulaştığını, sunucu tarafından anlaşıldığını ve başarılı olduğunu ifade eden kodları içeren sınıftır. Bu sınıftaki kodlar şöyledir:
+200 - Başarılı/Tamam
+201 - Oluşturuldu
+202 - Kabul edildi/Onaylandı
+203 - Yetersiz bilgi
+204 - İçerik yok
+205 - İçeriği baştan al
+206 - Kısmi içerik
+207 - Çoklu statü
+210 - Farklı içerik
+
+3xx: Bir yönlendirme söz konusu olduğunda gösterilen ve ulaşılmak istenen bilginin, başka bir kaynağa taşındığını bildiren HTTP durum kodlarından oluşan sınıftır. Bu sınıftaki kodlar şöyledir:
+300 - Çoklu seçenek
+301 - Kalıcı yönlendirme
+302 - Geçici yönlendirme
+303 - Diğerlerine bak
+304 - Güncellenmemiş/Değiştirilmemiş
+305 - Proxy kullan
+307 - Geçici olarak yeniden yönlendirme
+
+4xx: arayıcı tarafından gönderilen isteğe konu olan web sitesine ya da sayfaya ulaşılamadığında gösterilen ve isteğin yerine getirilemediğini ifade eden HTTP durum kodları, bu sınıfa dâhildir. Bu sınıftaki kodlar şöyledir:
+400 - Kötü/Hatalı istek
+401 - Yetkisi
+402 - Ödeme gerekli
+403 - Yasaklandı/Erişim izni sorunu
+404 - Bulunamadı
+405 - İzin verilmeyen yöntem
+406 - Kabul edilemez
+407 - Proxy üzerinden yetkilendirme gerekli
+408 - Zaman aşımı
+409 - Çakışma
+410 - Kaynak artık yok/Kalıcı olarak bulunmuyor
+411 - Uzunluk (içerik boyutu) gerekli
+412 - Ön koşul başarısız
+413 - Girilen veri çok fazla
+414 - İstek URL’i çok büyük
+415 - Desteklenmeyen medya tipi
+416 - Kaynak kısmi geçersiz
+417 - İstek başarısız
+422 - İşlenemeyen varlık
+423 - Kilitli
+424 - Kaynak işleme alınamadı
+425 - Çok erken
+426 - Yükseltme gerekli
+428 - Ön koşul gerekli
+429 - Çok fazla istek
+451 - Yasal nedenlerle kullanılamıyor
+
+5xx: Kullanıcı isteğinin sunucuya başarılı bir şekilde ulaşması fakat sunucu kaynaklı sorunlar nedeniyle isteğin yerine getirilememesi hâlinde gösterilen kodların sınıfıdır. 5xx HTTP durum kodları şunlardır:
+500 - Sunucu hatası
+501 - İstek uygulanmadı
+502 - Kötü ağ geçidi
+503 - Sunucu kullanılamıyor
+504 - Ağ geçidi zaman aşımı
+505 - HTTP sürümü desteklenmiyor
+507 - Yetersiz depolama
+509 - Bant genişliği sınırı aşıldı
+511 - Ağ kimlik doğrulaması gerekli
+521 - Web sunucusu kapalı
+
