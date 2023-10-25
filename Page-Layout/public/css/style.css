@@ -1,0 +1,51 @@
+*{
+    margin: 5;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(3, 95, 244, 0.745); 
+    padding: 1.7em 0 1.7em 0;
+    
+}
+
+body{
+    height: 95vh;
+    background: #330a4f;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.leftside{
+    background:#767676b8;
+    padding: 3em 0 3em 0;
+    flex: 1 1  ;
+}
+main{
+    background: #b002e0bb;
+    padding: 3em 0 ;
+    flex: 5 5 150px;
+}
+
+footer{
+    background: #b10202c5;
+    padding: 1.7em ;
+    
+}
+
+.rightside{
+    background: #018449a7;
+    padding: 2em 0;
+    flex: 1 1 100px;
+
+}
+
